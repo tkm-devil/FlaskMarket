@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron text-center" style="background-color: #212121;">
+        <h1 class="display-4 text-white">Welcome to Flask Market</h1>
+        <p class="lead text-white">Buy and sell your favorite items</p>
+        <hr class="my-4">
+        <p class="text-white">Start exploring the market today!</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('market_page') }}" role="button">Go to Market</a>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-shopping-cart fa-4x text-primary"></i>
+                    <h3>Easy Shopping</h3>
+                    <p>Find and purchase your desired items with ease. Our user-friendly interface makes shopping a breeze.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-dollar-sign fa-4x text-success"></i>
+                    <h3>Affordable Prices</h3>
+                    <p>Discover a wide range of products at affordable prices. Get great deals and save money on your purchases.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-truck fa-4x text-info"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Experience swift and reliable delivery services. We ensure your items reach you in a timely manner.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
