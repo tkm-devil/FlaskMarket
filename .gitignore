@@ -6,6 +6,16 @@ __pycache__/
 # C extensions
 *.so
 
+# IDE specific files and folders
+.vscode/
+.idea/
+
+# SQLite database file
+instance/market.db
+
+# System-specific files
+.DS_Store
+
 # Distribution / packaging
 .Python
 build/
